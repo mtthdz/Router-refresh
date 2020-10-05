@@ -25,7 +25,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <h1>My Personal Webpage!</h1>
-          <Route path="/About" component={About} />
+
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+
+          <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </div>
       </Router>
@@ -35,3 +39,4 @@ class App extends Component {
 }
 
 export default App;
+
