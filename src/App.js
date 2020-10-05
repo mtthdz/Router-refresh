@@ -9,7 +9,17 @@ import {
 
 const Contact = (props) => {
   return(
-    <h2>Contact</h2>
+    <div>
+      <h2>Contact</h2>
+      <Link to="/contact/michelle">Michelle</Link>
+      <Route path="/contact/michelle" component={Michelle} />
+    </div>
+  )
+}
+
+const Michelle = () => {
+  return(
+    <h2>About Michelle</h2>
   )
 }
 
